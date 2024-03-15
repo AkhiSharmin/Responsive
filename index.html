@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .item {
+            text-align: center;
+            background-color: lightblue;
+            border: 3px solid lightseagreen;
+            padding: 15px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+            }
+
+            .item {
+                background-color: crimson;
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+
+
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .item {
+                background-color: darkmagenta;
+            }
+        }
+
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .item {
+                background-color: indianred;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="item">
+                <h2>Item 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum ab repellat similique
+                    voluptas pariatur facere vitae dolor soluta non eaque quos velit, adipisci quidem itaque nostrum.
+                    Nisi, sequi rem.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum ab repellat similique
+                    voluptas pariatur facere vitae dolor soluta non eaque quos velit, adipisci quidem itaque nostrum.
+                    Nisi, sequi rem.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum ab repellat similique
+                    voluptas pariatur facere vitae dolor soluta non eaque quos velit, adipisci quidem itaque nostrum.
+                    Nisi, sequi rem.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum ab repellat similique
+                    voluptas pariatur facere vitae dolor soluta non eaque quos velit, adipisci quidem itaque nostrum.
+                    Nisi, sequi rem.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum ab repellat similique
+                    voluptas pariatur facere vitae dolor soluta non eaque quos velit, adipisci quidem itaque nostrum.
+                    Nisi, sequi rem.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum ab repellat similique
+                    voluptas pariatur facere vitae dolor soluta non eaque quos velit, adipisci quidem itaque nostrum.
+                    Nisi, sequi rem.</p>
+                <button>Click Me</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

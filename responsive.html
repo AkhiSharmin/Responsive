@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-size: 80px;
+            /* font-size: 10vw; */
+            /* font-size: 5rem; */
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container .tigerImg {
+            width: 50%;
+        }
+
+        .tigerImg img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            h2 {
+                font-size: 40px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Responsive Website</h2>
+    <h4>Explore Responsive</h4>
+    <div class="container">
+        <div class="tigerImg">
+            <img src="img/img1.jpg" alt="">
+        </div>
+        <div class="tigerImg">
+            <img src="img/img2.jpeg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

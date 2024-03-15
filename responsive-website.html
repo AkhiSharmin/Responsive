@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .item {
+            text-align: center;
+            padding: 20px;
+            border: 3px solid #212121;
+        }
+
+
+        /* smaller size  */
+        @media screen and (max-width: 576px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (min-width: 577px) and (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item">
+                <h2>Item 1</h2>
+                <img src="img/foodimg.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate alias pariatur recusandae
+                    obcaecati aspernatur nihil cumque non quisquam dicta.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 2</h2>
+                <img src="img/foodimg.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate alias pariatur recusandae
+                    obcaecati aspernatur nihil cumque non quisquam dicta.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 3</h2>
+                <img src="img/foodimg.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate alias pariatur recusandae
+                    obcaecati aspernatur nihil cumque non quisquam dicta.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 4</h2>
+                <img src="img/foodimg.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate alias pariatur recusandae
+                    obcaecati aspernatur nihil cumque non quisquam dicta.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 5</h2>
+                <img src="img/foodimg.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate alias pariatur recusandae
+                    obcaecati aspernatur nihil cumque non quisquam dicta.</p>
+                <button>Click Me</button>
+            </div>
+            <div class="item">
+                <h2>Item 6</h2>
+                <img src="img/foodimg.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate alias pariatur recusandae
+                    obcaecati aspernatur nihil cumque non quisquam dicta.</p>
+                <button>Click Me</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
